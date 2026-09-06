@@ -9,16 +9,34 @@
 
 ## 1. Executive Summary for Data Protection Officers & CISOs
 
-Under India’s **Digital Personal Data Protection Act (DPDP Act 2023)**, Data Fiduciaries and Significant Data Fiduciaries (SDFs) face unprecedented statutory liabilities:
-* **Section 33 & Schedule 1**: Fines reaching up to **₹250 Crore (~$30M USD)** per violation for failure to observe reasonable security safeguards to prevent personal data breaches.
-* **Section 12(3)**: An unambiguous mandate to irrevocably erase personal data upon withdrawal of consent or once the specified business purpose has been fulfilled.
-* **CERT-In Cyber Security Directions**: Mandatory 6-hour cybersecurity breach reporting window, creating extreme operational risk if plaintext personal data is compromised.
+![Parliament of India - Sansad Bhavan, New Delhi](assets/gov/parliament_of_india_official.jpg)
+*Figure 1: The Parliament of India, New Delhi — Enactment Venue of the Digital Personal Data Protection Act (DPDP Act 2023).*
+
+Under India’s **Digital Personal Data Protection Act (DPDP Act 2023)** passed by Parliament and notified by the Ministry of Electronics and Information Technology (MeitY), Data Fiduciaries and Significant Data Fiduciaries (SDFs) face unprecedented statutory liabilities:
+
+<div align="center">
+  <img src="assets/gov/ashwini_vaishnaw_meity_minister.jpg" width="220" alt="Union Minister for Electronics and IT Ashwini Vaishnaw" />
+  <p><em>Hon'ble Union Minister for Electronics and IT, Shri Ashwini Vaishnaw, under whose stewardship the DPDP Act 2023 was framed and introduced in Parliament.</em></p>
+</div>
+
+* **Section 33 & Schedule 1**: Statutory penalties reaching up to **₹250 Crore (~$30M USD)** per incident for failure to implement reasonable security safeguards to prevent personal data breaches.
+* **Section 12(3)**: An absolute mandate to irrevocably erase personal data upon withdrawal of consent or once the specified business purpose has been fulfilled.
+* **CERT-In Cyber Security Directions**: Mandatory 6-hour cybersecurity incident reporting window, creating extreme operational liability if unencrypted personal data is exposed.
 
 For Chief Information Security Officers (CISOs), Data Protection Officers (DPOs), and IT Directors, compliance cannot rely on paper policies or developer-level conventions. It requires **cryptographically verifiable technical boundaries**.
 
 ---
 
-## 2. The Four Critical Audit Gaps in Traditional Architectures
+## 2. Constitutional Foundation & Judicial Precedent
+
+![Supreme Court of India, New Delhi](assets/gov/supreme_court_of_india_official.jpg)
+*Figure 2: The Supreme Court of India, New Delhi — Seat of the 9-Judge Constitutional Bench in Justice K.S. Puttaswamy (Retd.) vs Union of India establishing Data Privacy as a Fundamental Right under Article 21.*
+
+The legal backbone of India's privacy jurisprudence stems from the Supreme Court of India's landmark judgment holding that privacy encompasses informational privacy and data self-determination. This constitutional foundation imposes direct legal fiduciary duties upon organizations collecting digital personal data.
+
+---
+
+## 3. The Four Critical Audit Gaps in Traditional Architectures
 
 When Cert-In empaneled auditors or internal compliance teams review enterprise software stacks, four structural vulnerabilities consistently surface:
 
@@ -29,9 +47,24 @@ When Cert-In empaneled auditors or internal compliance teams review enterprise s
 | **Cross-Framework Conflict** | Financial regulations (RBI/SEBI) require 7-year retention; DPDP/GDPR requires prompt erasure | Database deletion breaks audit trail referential integrity | **Cryptographic Decoupling**: Audit ledger retains surrogate tokens for financial audit; PII payload is permanently unreadable |
 | **Breach Blast Radius** | Plaintext database dumps leaked via compromised credentials | Immediate catastrophic notification obligation to CERT-In and Data Protection Board | **Zero Plaintext at Rest**: Attacker obtains only opaque surrogate tokens with zero cryptographic utility |
 
+![Reserve Bank of India Headquarters, Mumbai](assets/gov/rbi_headquarters_mumbai_official.jpg)
+*Figure 3: Reserve Bank of India (RBI) Headquarters, Mumbai — Regulatory authority governing banking data localization, cyber security frameworks, and audit retention schedules.*
+
 ---
 
-## 3. Statutory Compliance Checklist for DPOs & Security Auditors
+## 4. International Standard Alignment: NIST SP 800-88 Rev. 1
+
+![NIST Headquarters - Advanced Measurement Laboratory, Gaithersburg MD](assets/gov/nist_gaithersburg_aml_building_official.jpg)
+*Figure 4: National Institute of Standards and Technology (NIST) Advanced Measurement Laboratory Campus, Gaithersburg, MD — Authors of NIST SP 800-88 Rev. 1 Guidelines for Media Sanitization.*
+
+Securelay implements Section 5 of NIST Special Publication 800-88 Rev. 1 (Cryptographic Erasure):
+1. **Target Sanitization**: In distributed environments where physical media overwrite is physically impossible, destroying the individual Data Encryption Key (DEK) renders the target data mathematically unrecoverable.
+2. **Exhaustive Key Infeasibility**: Sanitized records require brute-force inversion of $2^{256}$ AES-GCM search space, exceeding the thermodynamic limits of computation.
+3. **Verifiable Destruction**: A cryptographically signed HMAC-SHA256 Tombstone Certificate proves to Cert-In and statutory auditors that erasure occurred at an exact timestamp.
+
+---
+
+## 5. Statutory Compliance Checklist for DPOs & Security Auditors
 
 ### Phase A: Notice, Consent & Data Minimization (Sections 5 & 6)
 - [x] Sensitive fields (PAN, Aadhaar, phone, email, biometric/health data) mapped and classified at the ingress boundary.
@@ -50,7 +83,7 @@ When Cert-In empaneled auditors or internal compliance teams review enterprise s
 
 ---
 
-## 4. Architecture Verification & Data Flow
+## 6. Architecture Verification & Data Flow
 
 ```mermaid
 graph TD
@@ -83,9 +116,9 @@ graph TD
 
 ---
 
-## 5. Executive Consultation & Enterprise Pilot Program
+## 7. Executive Consultation & Enterprise Pilot Program
 
-Securelay is dedicated to partnering with Chief Information Security Officers (CISOs), Data Protection Officers (DPOs), and enterprise engineering leadership to achieve verifiable, stress-tested compliance.
+Securelay partners with Chief Information Security Officers (CISOs), Data Protection Officers (DPOs), and enterprise engineering leadership to achieve verifiable, stress-tested compliance.
 
 ### How We Engage with Enterprise Teams:
 1. **Confidential DPDP Architecture Audit**: A structured review of your data ingestion pathways, database persistence models, and backup pipelines to identify Section 12 and Section 33 exposure points.
@@ -94,7 +127,7 @@ Securelay is dedicated to partnering with Chief Information Security Officers (C
 
 ---
 
-## 6. Connect with Leadership
+## 8. Connect with Leadership
 
 * **Shanmukh Chitturi**  
   *Principal Privacy Architect & Co-Founder*  
