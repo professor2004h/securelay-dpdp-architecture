@@ -4,6 +4,7 @@
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-brightgreen.svg)](https://www.python.org/)
 [![Standards](https://img.shields.io/badge/Standards-NIST%20SP%20800--88%20Rev.%201-orange.svg)](https://csrc.nist.gov/publications/detail/sp/800-88/rev-1/final)
+[![Cross-Framework Matrix](https://img.shields.io/badge/Compliance%20Matrix-ISO%2027001%20%7C%20SOC%202%20%7C%20DPDP%20%7C%20ISO%2042001-blue.svg)](CROSS_FRAMEWORK_COMPLIANCE_MATRIX.md)
 [![Compliance](https://img.shields.io/badge/Compliance-DPDP%20Act%202023%20%7C%20GDPR%20Art.%2017-purple.svg)](https://www.meity.gov.in/)
 [![Author](https://img.shields.io/badge/Lead-Shanmukh%20Chitturi-0077B5.svg?logo=linkedin)](https://www.linkedin.com/in/shanmukh-chitturi/)
 
@@ -18,6 +19,14 @@ Modern high-throughput cloud architectures are inherently distributed and immuta
 * **Storage Immutability**: Write-Ahead Logs (WAL) in PostgreSQL/MySQL, append-only logs in Apache Kafka, partitioned Parquet files in Amazon S3 / Delta Lake, and Redis read replicas.
 * **The "Soft Delete" Fallacy**: Executing `UPDATE users SET deleted_at = NOW()` leaves plaintext PII in database disk pages, CDC streams, snapshot backups, and data lakes indefinitely.
 * **The "Physical Overwrite" Impossibility**: Physically locating and zeroing out individual records across terabytes of compressed, columnar parquet backups or distributed storage blocks destroys backup integrity and incurs catastrophic I/O costs.
+
+---
+
+
+### 📚 Enterprise Architecture & Audit Playbooks
+* 📑 **[Cross-Framework Compliance & Architecture Matrix](CROSS_FRAMEWORK_COMPLIANCE_MATRIX.md)**: Unified mapping across ISO/IEC 27001:2022, SOC 2 Type II, India's DPDP Act 2023, ISO/IEC 42001 (AI Management), and NIST AI RMF 1.0.
+* 🏛️ **[The CISO & DPO Technical Audit Playbook](DPDP_CISO_AUDIT_PLAYBOOK.md)**: Statutory defense guide, Section 12 erasure mechanics, CERT-In incident reporting, and constitutional precedent.
+* 🚀 **[3-Day Proof-of-Concept (PoC) Deployment Guide](POC_DEPLOYMENT_GUIDE.md)**: Step-by-step deployment for staging environments with zero disruption to legacy databases.
 
 ---
 
