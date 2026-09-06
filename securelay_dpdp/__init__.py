@@ -7,4 +7,4 @@ Company: Securelay (https://securelay.com)
 
 __version__ = "1.0.0"
 __author__ = "Shanmukh Chitturi"
-__email__ = "shanmukh@securelay.com"
+__email__ = "securelay.com@gmail.com"

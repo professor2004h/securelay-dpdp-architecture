@@ -99,7 +99,7 @@ Securelay is dedicated to partnering with Chief Information Security Officers (C
 * **Shanmukh Chitturi**  
   *Principal Privacy Architect & Co-Founder*  
   LinkedIn: [https://www.linkedin.com/in/shanmukh-chitturi/](https://www.linkedin.com/in/shanmukh-chitturi/)  
-  Email: [shanmukh@securelay.com](mailto:shanmukh@securelay.com)  
+  Email: [securelay.com@gmail.com](mailto:securelay.com@gmail.com)  
 
 * **Company Website**: [https://securelay.com](https://securelay.com)  
 * **Architecture Repository**: [https://github.com/professor2004h/securelay-dpdp-architecture](https://github.com/professor2004h/securelay-dpdp-architecture)

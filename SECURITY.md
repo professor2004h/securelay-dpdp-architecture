@@ -18,7 +18,7 @@ Securelay takes the security of data privacy infrastructure with paramount serio
 
 If you discover a potential security flaw, vulnerability, or cryptographic anomaly in this reference implementation or Securelay Enterprise Engine, please disclose it responsibly:
 
-* **Direct Security Email**: `shanmukh@securelay.com`
+* **Direct Security Email**: `securelay.com@gmail.com`
 * **Lead Contact**: **Shanmukh Chitturi** ([LinkedIn Profile](https://www.linkedin.com/in/shanmukh-chitturi/))
 * **PGP Encryption**: Available upon request for sensitive disclosures.
 
@@ -33,4 +33,4 @@ Securelay reference architectures undergo ongoing internal and independent code 
 * Cryptographic timing attack resistance during token validation.
 * Zeroization proofs for destroyed key material in volatile memory.
 
-For third-party Cert-In empaneled audit documentation or pilot reviews, contact `shanmukh@securelay.com`.
+For third-party Cert-In empaneled audit documentation or pilot reviews, contact `securelay.com@gmail.com`.

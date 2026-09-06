@@ -135,14 +135,14 @@ Notice that downstream logs and database tables receive sanitized tokens (`tok_.
 * **Lead Architect**: **Shanmukh Chitturi**
   * LinkedIn: [https://www.linkedin.com/in/shanmukh-chitturi/](https://www.linkedin.com/in/shanmukh-chitturi/)
 * **Official Website**: [https://securelay.com](https://securelay.com)
-* **Direct Pilot Consultation**: `shanmukh@securelay.com`
+* **Direct Pilot Consultation**: `securelay.com@gmail.com`
 
 ### Request a Confidential DPDP Architecture Review & Pilot Access
 Are you a CISO, CTO, VP Engineering, or Data Protection Officer preparing your systems for India's DPDP Act or GDPR audits?
 * Schedule a confidential architecture evaluation.
 * Test the **Securelay Enterprise Ingestion Proxy** in your staging environment with zero changes to existing microservices.
 
-**Contact**: [shanmukh@securelay.com](mailto:shanmukh@securelay.com) or connect directly on [LinkedIn](https://www.linkedin.com/in/shanmukh-chitturi/).
+**Contact**: [securelay.com@gmail.com](mailto:securelay.com@gmail.com) or connect directly on [LinkedIn](https://www.linkedin.com/in/shanmukh-chitturi/).
 
 ---
 
