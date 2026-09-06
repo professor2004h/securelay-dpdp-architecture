@@ -1,0 +1,14 @@
+{
+  "name": "securelay-dpdp-architecture",
+  "version": "1.0.0",
+  "description": "Securelay Zero-Trust Ingestion Tokenization and NIST SP 800-88 Cryptographic Shredding",
+  "main": "examples/express_middleware.js",
+  "scripts": {
+    "start": "node examples/express_middleware.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "author": "Shanmukh Chitturi <securelay.com@gmail.com> (https://www.linkedin.com/in/shanmukh-chitturi/)",
+  "license": "Apache-2.0"
+}

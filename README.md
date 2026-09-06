@@ -88,6 +88,7 @@ sequenceDiagram
 This repository provides an enterprise reference implementation demonstrating:
 1. **`securelay_dpdp/proxy`**: ASGI/FastAPI reverse proxy middleware performing zero-overhead payload inspection and field-level tokenization.
 2. **`securelay_dpdp/shredder`**: Key lifecycle manager implementing envelope key separation (KEK/DEK) and NIST SP 800-88 cryptographic key shredding with auditable tombstone events.
+3. **`examples/express_middleware.js`**: Node.js & Express drop-in middleware reference for JavaScript/TypeScript microservices.
 
 ### Installation & Quickstart
 
@@ -103,10 +104,16 @@ pip install -r requirements.txt
 pytest tests/ -v
 ```
 
-### Running the Example Server
+### Running the Example Servers
 
+**Python (FastAPI):**
 ```bash
 python examples/app.py
+```
+
+**Node.js (Express):**
+```bash
+node examples/express_middleware.js
 ```
 
 Send a sample customer onboarding request:
